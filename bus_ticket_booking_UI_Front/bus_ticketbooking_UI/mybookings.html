@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Bus Booking</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <header>
+        <!-- Navigation-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container ">
+                <!-- logo  -->
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/05.jpg" alt="logo" width="50px"
+                        height="50px"></a>
+                <!-- logo -->
+                <a class="navbar-brand" href="#page-top">ReyBus Ticket Booking</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- <li class="nav-item"><a class="nav-link" href="/bus_ticketbooking_UI/adminhome.html">Home Page</a></li> -->
+                        <li class="nav-item" id="home"><a class="nav-link" >Home Page</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/bus_ticketbooking_UI/buslist.html">Book Bus</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/bus_ticketbooking_UI/index.html">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="vh-100 bg-image"
+        style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+            <div class="container h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 col-xxl-9">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body p-5">
+                                <h2 class="text-uppercase text-center mb-5">My Bookings</h2>
+
+                                <div class="row justify-content-center">
+                                    <div class="col-auto">
+                                        <table class="table table-responsive table-success table-striped table-bordered" id="bookingTable">
+
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Booking ID</th>
+                                                    <th scope="col">Bus Name</th>
+                                                    <th scope="col">From</th>
+                                                    <th scope="col">To</th>
+                                                    <th scope="col">First name</th>
+                                                    <th scope="col">Last Name</th>
+                                                    <th scope="col">Email</th>
+                                                    <th scope="col">Phone number</th>
+                                                    <th scope="col">Total tickets</th>
+                                                    <th scope="col">Total Price</th>
+                                                        
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="js/bookinglist.js"></script>
+</body>
+
+</html>

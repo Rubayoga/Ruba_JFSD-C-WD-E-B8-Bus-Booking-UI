@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Bus Booking</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <header>
+    <!-- Navigation-->
+    
+   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top"> 
+        <div class="container-fluid text-success">
+            <!-- logo  -->
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/05.jpg" alt="logo" width="50px"
+                    height="50px"></a>
+            <!-- logo -->
+            <a class="navbar-brand" href="#page-top">ReyBus Ticket Booking</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/bus_ticketbooking_UI/userhome.html">Home Page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/bus_ticketbooking_UI/mybookings.html">My Bookings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/bus_ticketbooking_UI/index.html">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <section class="vh-400 bg-image"
+            style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+            <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+                <div class="container h-900">
+                    <div class="h-100 d-flex align-items-center justify-content-center">
+                    <!-- <div class="row d-flex justify-content-center align-items-center h-10"> -->
+                        <div class="col-12 col-md-9 col-lg-10 col-xxl-6">
+                            <div class="card" style="border-radius: 5px;">
+                                <div class="card-body p-5">
+                                    <h2 class="text-uppercase text-center mb-5">Book Your Bus</h2> 
+
+                                    <form id="busbook" name="busbook">
+
+                                        <div data-mdb-input-init class="form-outline mb-0">
+                                            <input type="text" id="bus_name" class="form-control form-control-lg" />
+                                            <label class="form-label" for="bus_name">Bus Name</label>
+                                        </div> 
+
+                                        <div data-mdb-input-init class="form-outline mb-0">
+                                            <input type="text" id="from_location" class="form-control form-control-lg" />
+                                            <label class="form-label" for="from_location">From location</label>
+                                        </div> 
+                                        <div data-mdb-input-init class="form-outline mb-0">
+                                            <input type="text" id="to_location" class="form-control form-control-lg" />
+                                            <label class="form-label" for="to_location">To Location</label>
+                                            </div> 
+
+                                         <div data-mdb-input-init class="form-outline mb-0">
+                                            <input type="text" id="first_name" class="form-control form-control-lg" />
+                                            <label class="form-label" for="first_name">First Name</label>
+                                            </div>   
+                                        <div data-mdb-input-init class="form-outline mb-0">
+                                            <input type="text" id="last_name" class="form-control form-control-lg" />
+                                            <label class="form-label" for="last_name">Last Name</label>
+                                            </div>
+
+                                        
+                                     <div data-mdb-input-init class="form-outline mb-0">
+                                            <input type="email" id="email" class="form-control form-control-lg" />
+                                            <label class="form-label" for="email">Your Email</label>
+                                        </div>
+
+                                        <div data-mdb-input-init class="form-outline mb-0">
+                                            <input type="text" id="phone_number" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phone_number">Phone Number</label>
+                                        </div> 
+                                        <div data-mdb-input-init class="form-outline mb-0">
+                                            <input type="number" id="number_of_seats" class="form-control form-control-lg" />
+                                            <label class="form-label" for="number_of_seats">Total Tickets</label>
+
+
+
+                                        <div class="d-flex justify-content-center">
+                                            <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                                                class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Book</button>
+                                        </div>
+
+
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    <script src="js/bookbus.js"></script>
+</body>
+
+</html>
